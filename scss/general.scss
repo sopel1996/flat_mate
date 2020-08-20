@@ -1,0 +1,48 @@
+body {
+    @include fonts-Roboto;
+}
+
+.section-inner {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.color_dark{
+    & caption{
+        background-color: #4b596c;
+    }
+    & table{
+        background-color: #e9eef3;
+    }
+    & button{
+        background-color: #4b596c;
+    }
+}
+
+.color_green{
+    & caption{
+        background-color: #58ad52;
+    }
+    & table{
+        background-color: #deebde;
+    }
+    & button{
+        background-color: #58ad52;
+    }
+}
+
+.color_blue{
+    & caption{
+        background-color: #52a1ad;
+    }
+    & table{
+        background-color: #dee9ec;
+    }
+    & button{
+        background-color: #52a1ad;
+    }
+}

@@ -1,0 +1,134 @@
+.section-header {
+    color: #fffFFF;
+    background: url("../img/header_background.png") no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+
+    .section-inner {
+        position: relative;
+        z-index: 10;
+        height: 100vh;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+
+    &_up{
+        padding-top: 35px;
+        flex-shrink: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        &-logo {
+            padding-right: 35px;
+        }
+
+        &-logo-text {
+            @include fonts-Roboto();
+            flex-grow: 1;
+            font-weight: 100;
+            font-size: 90px;
+            color: #ffffff; 
+        }
+
+        &-login-text {
+            @include fonts-Roboto();
+            padding-right: 35px;
+            font-weight: 100;
+            font-size: 30px;
+            font-style: italic;
+            color: #c9ced7; 
+        }
+
+        &-login-btn {
+            button {
+                @include fonts-Roboto();
+                width: 160px;
+                height: 60px;
+                border: none;
+                border-radius: 17px;
+                background-color: #3d4b60;
+                outline: none;
+                margin: 0;
+                padding: 0;
+                color: #cad1db;
+                font-weight: 500;
+                font-size: 30px; 
+            }
+        }
+    }
+
+    &_content{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .section-header_wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            &-content {
+                margin-right: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &-title {
+                    flex-grow: 1;
+                    @include fonts-Roboto();
+                    font-weight: 500;
+                    font-size: 105px;
+                    margin-bottom: 30px;
+                }
+
+                &-subtitle {
+                    flex-grow: 1;
+                    @include fonts-Roboto();
+                    font-weight: 100;
+                    font-size: 40px;
+                    margin-bottom: 50px;
+                }
+
+                &-btn {
+                    button {
+                        @include fonts-Roboto();
+                        width: 300px;
+                        height: 75px;
+                        border: none;
+                        border-radius: 15px;
+                        background-color: #67bf95;
+                        outline: none;
+                        margin: 0;
+                        padding: 0;
+                        color: #ffffff;
+                        font-weight: 500;
+                        font-size: 35px; 
+                        
+                        &::after {
+                            content: ' \2192'
+                        }
+                    }
+                }
+            }
+
+            &-img {
+                align-self: center;
+            }
+            
+        }
+    }
+
+&::before {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(69, 84, 105, 0.9); 
+  }
+}
